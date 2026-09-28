@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">Alan Redzepagic — Discover. Develop. Deploy.</title>
+  <desc id="desc">An amber orbital diagram on a dark field, with Alan Redzepagic's name and the words Discover, Develop, Deploy.</desc>
+  <rect width="1200" height="300" rx="12" fill="#140d0a"/>
+  <path d="M44 42H1156M44 258H1156" stroke="#3a2416" stroke-width="1"/>
+  <g fill="none" stroke="#b9a48f" stroke-width="1" opacity="0.22">
+    <circle cx="990" cy="150" r="105"/>
+    <circle cx="990" cy="150" r="72"/>
+    <path d="M860 150H1120M990 20V280"/>
+    <ellipse cx="990" cy="150" rx="127" ry="39" transform="rotate(-24 990 150)"/>
+  </g>
+  <circle cx="990" cy="150" r="38" fill="#3a2416" stroke="#c9862f" stroke-width="2"/>
+  <path d="M958 165Q985 140 1023 150M965 125Q993 161 1019 176" fill="none" stroke="#c9862f" stroke-width="1.5"/>
+  <circle cx="1086" cy="107" r="5" fill="#c9862f"/>
+  <circle cx="925" cy="181" r="3" fill="#f3e9dc"/>
+  <path d="M44 77H80" stroke="#c9862f" stroke-width="3"/>
+  <text x="44" y="133" fill="#f3e9dc" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" letter-spacing="2">ALAN REDZEPAGIC</text>
+  <text x="46" y="184" fill="#b9a48f" font-family="Arial, Helvetica, sans-serif" font-size="27">Discover. Develop. Deploy.</text>
+  <text x="46" y="230" fill="#c9862f" font-family="monospace" font-size="17" letter-spacing="2">ALANRED.ME</text>
+</svg>
