@@ -2,11 +2,21 @@
 
 # Alan Redzepagic
 
-**CTO at Forever Labs · Systems architecture, full-stack engineering & production operations.**
+**Multidisciplinary technologist & engineering lead.**
 
-I set technical direction and stay hands-on in the systems that carry it: application code, cloud infrastructure, deployment, and operations. My stack centers on AWS and Vercel, with self-hosted infrastructure where control of data, runtime, or cost warrants it.
+Full-stack engineering, UX/UI, agentic systems, and bioinformatics.
+
+I connect technical direction with hands-on product development: shaping the experience, designing the architecture, and building the systems behind it. My work spans the interface people use, the data and intelligence underneath, and the infrastructure that keeps it running.
 
 [Website](https://alanred.me) · [LinkedIn](https://www.linkedin.com/in/alanredzepagic) · [X / Twitter](https://x.com/allanred)
+
+![AWS](assets/stack/aws.svg) ![Vercel](assets/stack/vercel.svg) ![Docker](assets/stack/docker.svg) ![Linux](assets/stack/linux.svg)
+
+![TypeScript](assets/stack/typescript.svg) ![Next.js](assets/stack/nextjs.svg) ![LangChain](assets/stack/langchain.svg) ![UX/UI](assets/stack/uxui.svg)
+
+## Product engineering & UX/UI
+
+I work across user flows, interface design, component systems, and full-stack implementation. API contracts and data models have to support the intended experience; accessibility, performance, and deployment are part of delivering the product.
 
 ## Cloud architecture
 
@@ -20,9 +30,11 @@ I own the path from a reviewed change to a running service: CI/CD, environment i
 
 Self-hosting includes the operational work: Linux, containers, networking, updates, backups, and recovery. I use managed services where they reduce that burden, and self-host where the control is worth maintaining. Kubernetes has a place when the workload warrants its complexity.
 
-## AI systems
+## Agentic engineering & bioinformatics
 
-I build the infrastructure around the model: durable agent workflows, retrieval, scoped tool access, and inspectable execution. AWS Bedrock, LangGraph, and self-hosted inference serve different deployment requirements. The model should be replaceable; application state, credentials, and action permissions should remain under our control.
+I build agentic systems with durable workflows, retrieval, scoped tool access, and inspectable execution. AWS Bedrock, LangChain/LangGraph, and self-hosted inference serve different deployment requirements. Models should be replaceable; state, credentials, and action permissions should remain under our control.
+
+In bioinformatics, I focus on genomic data workflows and interpretation interfaces, keeping deterministic analysis distinct from model-generated explanation. Provenance, uncertainty, and data privacy shape the engineering.
 
 ## Writing
 
@@ -32,4 +44,4 @@ I build the infrastructure around the model: durable agent workflows, retrieval,
 
 ## Get in touch
 
-For technical leadership, cloud architecture, or AI infrastructure: [LinkedIn](https://www.linkedin.com/in/alanredzepagic) · [X / Twitter](https://x.com/allanred)
+For engineering leadership, product development, or applied AI: [LinkedIn](https://www.linkedin.com/in/alanredzepagic) · [X / Twitter](https://x.com/allanred)

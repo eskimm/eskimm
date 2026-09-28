@@ -17,7 +17,9 @@ class ProfileTests(unittest.TestCase):
         self.assertEqual(data["blog"], "https://alanred.me")
         self.assertEqual(data["company"], "Forever Labs")
         self.assertEqual(data["location"], "New York")
-        self.assertIn("CTO at Forever Labs", data["bio"])
+        self.assertIn("Multidisciplinary technologist", data["bio"])
+        self.assertIn("engineering lead", data["bio"])
+        self.assertNotIn("CTO", data["bio"])
         self.assertLessEqual(len(data["bio"]), 160)
 
     def test_readme_public_story(self):
@@ -26,16 +28,20 @@ class ProfileTests(unittest.TestCase):
         text = path.read_text(encoding="utf-8")
         self.assertEqual(re.findall(r"^# .+$", text, re.M), ["# Alan Redzepagic"])
         self.assertEqual(re.findall(r"^## .+$", text, re.M), [
+            "## Product engineering & UX/UI",
             "## Cloud architecture",
             "## DevOps & self-hosting",
-            "## AI systems",
+            "## Agentic engineering & bioinformatics",
             "## Writing",
             "## Get in touch",
         ])
         self.assertTrue(200 <= len(text.split()) <= 450)
         self.assertIn("assets/profile-banner.svg", text)
-        for required in ("AWS", "Vercel", "DevOps", "self-hosting", "CI/CD", "CDK"):
+        for required in ("AWS", "Vercel", "DevOps", "self-hosting", "CI/CD", "CDK",
+                         "Multidisciplinary technologist", "engineering lead", "UX/UI",
+                         "Agentic engineering", "bioinformatics"):
             self.assertIn(required, text)
+        self.assertNotIn("CTO", text)
         for obsolete in ("Everyrealm", "neonARKade", "Duel", "Vue", "Nuxt", "WordPress"):
             self.assertNotIn(obsolete, text)
         allowed = {
@@ -54,12 +60,35 @@ class ProfileTests(unittest.TestCase):
         self.assertNotIn("https://github.com/", text)
         self.assertNotIn("vercel.app", text)
 
+    def test_stack_badges_are_local_and_accessible(self):
+        text = (ROOT / "README.md").read_text(encoding="utf-8")
+        badges = {
+            "aws": "AWS", "vercel": "Vercel", "nextjs": "Next.js",
+            "typescript": "TypeScript", "docker": "Docker", "linux": "Linux",
+            "langchain": "LangChain", "uxui": "UX/UI",
+        }
+        self.assertNotIn("Python", text)
+        self.assertFalse((ROOT / "assets/stack/python.svg").exists())
+        for slug, label in badges.items():
+            with self.subTest(slug=slug):
+                relative = f"assets/stack/{slug}.svg"
+                self.assertIn(f"![{label}]({relative})", text)
+                path = ROOT / relative
+                self.assertTrue(path.is_file(), f"{relative} is missing")
+                raw = path.read_text(encoding="utf-8")
+                root = ET.fromstring(raw)
+                self.assertEqual(root.attrib.get("role"), "img")
+                self.assertEqual(root.attrib.get("aria-label"), label)
+                self.assertLess(path.stat().st_size, 5000)
+                self.assertNotRegex(raw, r"<script|<image|<foreignObject|href=|@import|url\(")
+
     def test_banner_is_accessible_and_self_contained(self):
         path = ROOT / "assets/profile-banner.svg"
         self.assertTrue(path.is_file(), "profile-banner.svg is missing")
         self.assertLess(path.stat().st_size, 50000)
         raw = path.read_text(encoding="utf-8")
         root = ET.fromstring(raw)
+        self.assertNotIn("CTO", raw)
         ns = {"s": "http://www.w3.org/2000/svg"}
         self.assertEqual(root.attrib.get("viewBox"), "0 0 1200 300")
         self.assertEqual(root.attrib.get("role"), "img")

@@ -1,20 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
   <title id="title">Alan Redzepagic — Discover. Develop. Deploy.</title>
-  <desc id="desc">An amber orbital diagram on a dark field, with Alan Redzepagic's name and the words Discover, Develop, Deploy.</desc>
+  <desc id="desc">An amber technical atlas with orbital paths, a wireframe planet, and Alan Redzepagic's name. Discover, Develop, Deploy. Full-stack engineering, UX/UI, agentic systems, and bioinformatics.</desc>
   <rect width="1200" height="300" rx="12" fill="#140d0a"/>
-  <path d="M44 42H1156M44 258H1156" stroke="#3a2416" stroke-width="1"/>
-  <g fill="none" stroke="#b9a48f" stroke-width="1" opacity="0.22">
+  <rect x=".5" y=".5" width="1199" height="299" rx="12" fill="none" stroke="#604329"/>
+  <g stroke="#3a2416" stroke-width="1" opacity=".65">
+    <path d="M820 0V300M880 0V300M940 0V300M1000 0V300M1060 0V300M1120 0V300M1180 0V300"/>
+    <path d="M800 30H1200M800 90H1200M800 150H1200M800 210H1200M800 270H1200"/>
+  </g>
+  <path d="M44 42H744M44 258H1156" stroke="#604329" stroke-width="1"/>
+  <g fill="#b9a48f" opacity=".65">
+    <circle cx="808" cy="50" r="2"/><circle cx="880" cy="228" r="2"/>
+    <circle cx="1148" cy="70" r="2"/><circle cx="1128" cy="248" r="2"/>
+    <circle cx="942" cy="32" r="1.5"/><circle cx="1056" cy="252" r="1.5"/>
+  </g>
+  <g fill="none" stroke="#b9a48f" stroke-width="1" opacity="0.42">
     <circle cx="990" cy="150" r="105"/>
     <circle cx="990" cy="150" r="72"/>
     <path d="M860 150H1120M990 20V280"/>
     <ellipse cx="990" cy="150" rx="127" ry="39" transform="rotate(-24 990 150)"/>
   </g>
-  <circle cx="990" cy="150" r="38" fill="#3a2416" stroke="#c9862f" stroke-width="2"/>
-  <path d="M958 165Q985 140 1023 150M965 125Q993 161 1019 176" fill="none" stroke="#c9862f" stroke-width="1.5"/>
+  <circle cx="990" cy="150" r="50" fill="#1c1310" stroke="#c9862f" stroke-width="2"/>
+  <g fill="none" stroke="#c9862f" stroke-width="1" opacity=".7">
+    <ellipse cx="990" cy="150" rx="25" ry="50"/>
+    <ellipse cx="990" cy="150" rx="50" ry="18"/>
+    <path d="M940 150H1040M990 100V200M948 123Q990 142 1032 123M948 177Q990 158 1032 177"/>
+  </g>
+  <path d="m856 65 9-9m-9 0 9 9m253 168 10-10m-10 0 10 10" stroke="#c9862f" stroke-width="1.5"/>
   <circle cx="1086" cy="107" r="5" fill="#c9862f"/>
   <circle cx="925" cy="181" r="3" fill="#f3e9dc"/>
-  <path d="M44 77H80" stroke="#c9862f" stroke-width="3"/>
-  <text x="44" y="133" fill="#f3e9dc" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" letter-spacing="2">ALAN REDZEPAGIC</text>
-  <text x="46" y="184" fill="#b9a48f" font-family="Arial, Helvetica, sans-serif" font-size="27">Discover. Develop. Deploy.</text>
-  <text x="46" y="230" fill="#c9862f" font-family="monospace" font-size="17" letter-spacing="2">ALANRED.ME</text>
+  <text x="44" y="74" fill="#c9862f" font-family="monospace" font-size="13" letter-spacing="3">MULTIDISCIPLINARY TECHNOLOGIST / ENGINEERING LEAD</text>
+  <text x="42" y="136" fill="#f3e9dc" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="1">ALAN REDZEPAGIC</text>
+  <text x="44" y="182" fill="#b9a48f" font-family="Arial, Helvetica, sans-serif" font-size="27">Discover. Develop. Deploy.</text>
+  <g font-family="monospace" font-size="14" fill="#f3e9dc">
+    <circle cx="49" cy="221" r="3" fill="#c9862f"/>
+    <text x="64" y="226">FULL STACK + UX/UI</text>
+    <circle cx="281" cy="221" r="3" fill="#c9862f"/>
+    <text x="296" y="226">AGENTIC AI</text>
+    <circle cx="429" cy="221" r="3" fill="#c9862f"/>
+    <text x="444" y="226">BIOINFORMATICS</text>
+  </g>
+  <text x="44" y="282" fill="#b9a48f" font-family="monospace" font-size="12" letter-spacing="2">ALANRED.ME</text>
+  <text x="1002" y="282" fill="#b9a48f" font-family="monospace" font-size="12" letter-spacing="1">DISCOVER / BUILD</text>
 </svg>
